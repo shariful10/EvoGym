@@ -1,5 +1,9 @@
+import Navbar from "@/sences/Navbar";
+
 const App = () => {
-	return <div className="app">Affortless</div>;
+	return <div className="app">
+      <Navbar />
+   </div>;
 };
 
 export default App;

@@ -3,6 +3,7 @@ module.exports = {
 	env: { browser: true, es2023: true, Node: true },
 	extends: [
 		"eslint:recommended",
+		"plugin:react/recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:react-hooks/recommended",
 	],
@@ -14,5 +15,8 @@ module.exports = {
 			"warn",
 			{ allowConstantExport: true },
 		],
+		"react/prop-types": "off",
+		"react/react-in-tsx-scope": "off",
+		"react/no-unescaped-entities": 0,
 	},
 };
