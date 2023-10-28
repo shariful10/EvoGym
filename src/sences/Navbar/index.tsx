@@ -1,9 +1,10 @@
 import Link from "@/sences/Navbar/Link";
 import Logo from "@/assets/Logo.png";
+import { SelectedPage } from "@/shared/types";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 type Props = {
-	selectedPage: string;
+	selectedPage: SelectedPage;
 	setSelectedPage: (value: string) => void;
 };
 
