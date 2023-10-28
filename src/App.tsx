@@ -1,9 +1,17 @@
 import Navbar from "@/sences/Navbar";
+import { useState } from "react";
 
 const App = () => {
-	return <div className="app">
-      <Navbar />
-   </div>;
+	const [selectedPage, setSelectedPage] = useState<string>("home");
+
+	return (
+		<div className="app">
+			<Navbar
+				selectedPage={selectedPage}
+				setSelectedPage={setSelectedPage}
+			/>
+		</div>
+	);
 };
 
 export default App;
