@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 type Props = {
 	selectedPage: SelectedPage;
-	setSelectedPage: (value: string) => void;
+	setSelectedPage: (value: SelectedPage) => void;
 };
 
 const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
