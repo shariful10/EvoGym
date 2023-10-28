@@ -23,7 +23,9 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
 				<div className={`${flexBetween} mx-auto w-5/6`}>
 					<div className={`${flexBetween} w-full gap-16`}>
 						{/* <==<<=== Left Side ===>>==> */}
-						<img src={Logo} alt="Logo" />
+						<a href="/">
+							<img src={Logo} alt="Logo" />
+						</a>
 						{/* <==<<=== Right Side ===>>==> */}
 						{isAboveMediumScreens ? (
 							<div className={`${flexBetween} w-full`}>
@@ -76,7 +78,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
 							<XMarkIcon className="h-8 w-8 text-gray-400" />
 						</button>
 					</div>
-               {/* <==<<=== Menu Items ===>>==> */}
+					{/* <==<<=== Menu Items ===>>==> */}
 					<div className="ml-[33%] flex flex-col gap-10 text-2xl">
 						<Link
 							page="Home"
