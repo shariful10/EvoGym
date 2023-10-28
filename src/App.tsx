@@ -9,7 +9,9 @@ enum SelectedPage {
 }
 
 const App = () => {
-	const [selectedPage, setSelectedPage] = useState<string>(SelectedPage.Home);
+	const [selectedPage, setSelectedPage] = useState<SelectedPage>(
+		SelectedPage.Home
+	);
 
 	return (
 		<div className="app">
