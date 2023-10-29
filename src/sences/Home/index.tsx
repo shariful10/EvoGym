@@ -5,6 +5,7 @@ import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
+import ActionButton from "@/shared/ActionButton";
 
 type Props = {
 	setSelectedPage: (value: SelectedPage) => void;
@@ -19,18 +20,26 @@ const Home = ({ setSelectedPage }: Props) => {
 			<div className="">
 				{/* <==<<=== Main Header ===>>==> */}
 				<div className="">
-               {/* <==<<=== Headeings ===>>==> */}
-               <div className="">
-                  <div className="">
-                     <div className="">
-                        <img src={HomePageText} alt="HomePageText" />
-                     </div>
-                  </div>
-                  <p className="">Unrivaled Gym. Unparalleled Training Fitness Classes. World Class Studios to Get the Body Shapes That You Dream of.. Get Your Dream Body Now</p>
-               </div>
-            </div>
-            {/* <==<<=== Image ===>>==> */}
-            <div className=""></div>
+					{/* <==<<=== Headeings ===>>==> */}
+					<div className="">
+						<div className="">
+							<div className="">
+								<img src={HomePageText} alt="HomePageText" />
+							</div>
+						</div>
+						<p className="">
+							Unrivaled Gym. Unparalleled Training Fitness Classes. World
+							Class Studios to Get the Body Shapes That You Dream of..
+							Get Your Dream Body Now
+						</p>
+					</div>
+					{/* <==<<=== Actions ===>>==> */}
+					<div>
+						<ActionButton setSelectedPage={setSelectedPage}>Join Now</ActionButton>
+					</div>
+				</div>
+				{/* <==<<=== Image ===>>==> */}
+				<div className=""></div>
 			</div>
 		</section>
 	);
