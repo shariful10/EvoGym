@@ -24,11 +24,11 @@ const Home = ({ setSelectedPage }: Props) => {
 					{/* <==<<=== Headeings ===>>==> */}
 					<div className="md:-mt-20">
 						<div className="relative">
-							<div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] before:content-evolvetext">
+							<div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
 								<img src={HomePageText} alt="HomePageText" />
 							</div>
 						</div>
-						<p className="">
+						<p className="mt-8">
 							Unrivaled Gym. Unparalleled Training Fitness Classes. World
 							Class Studios to Get the Body Shapes That You Dream of..
 							Get Your Dream Body Now
