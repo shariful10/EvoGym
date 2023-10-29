@@ -20,7 +20,7 @@ const Home = ({ setSelectedPage }: Props) => {
 			{/* <==<<=== Main Header & Image ===>>==> */}
 			<div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6">
 				{/* <==<<=== Main Header ===>>==> */}
-				<div className="">
+				<div className="z-10 mt-32">
 					{/* <==<<=== Headeings ===>>==> */}
 					<div className="">
 						<div className="">
