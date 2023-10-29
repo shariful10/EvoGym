@@ -27,7 +27,7 @@ const Home = ({ setSelectedPage }: Props) => {
 						className="md:-mt-20"
 						initial="hidden"
 						whileInView="visible"
-						transition={{ duration: 0.5 }}
+						transition={{ delay: 0.3, duration: 0.5 }}
 						variants={{
 							hidden: { opacity: 0, x: -50 },
 							visible: { opacity: 1, x: 0 },
@@ -49,7 +49,7 @@ const Home = ({ setSelectedPage }: Props) => {
 					<motion.div
 						initial="hidden"
 						whileInView="visible"
-						transition={{ duration: 0.5 }}
+						transition={{ delay: 0.5, duration: 0.5 }}
 						variants={{
 							hidden: { opacity: 0, x: -50 },
 							visible: { opacity: 1, x: 0 },
