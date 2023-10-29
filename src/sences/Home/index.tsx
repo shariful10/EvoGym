@@ -28,7 +28,7 @@ const Home = ({ setSelectedPage }: Props) => {
 								<img src={HomePageText} alt="HomePageText" />
 							</div>
 						</div>
-						<p className="mt-8 text-sm">
+						<p className="mt-8 text-[18px]">
 							Unrivaled Gym. Unparalleled Training Fitness Classes. World
 							Class Studios to Get the Body Shapes That You Dream of..
 							Get Your Dream Body Now.
@@ -49,7 +49,7 @@ const Home = ({ setSelectedPage }: Props) => {
 					</div>
 				</div>
 				{/* <==<<=== Image ===>>==> */}
-				<div className="">
+				<div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
 					<img src={HomePageGraphic} alt="Home Page Graphic" />
 				</div>
 			</div>
