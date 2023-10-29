@@ -1,3 +1,4 @@
+import Home from "@/sences/Home"
 import Navbar from "@/sences/Navbar";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
@@ -28,6 +29,7 @@ const App = () => {
 				selectedPage={selectedPage}
 				setSelectedPage={setSelectedPage}
 			/>
+			<Home setSelectedPage={setSelectedPage} />
 		</div>
 	);
 };
