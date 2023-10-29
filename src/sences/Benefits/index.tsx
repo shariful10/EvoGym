@@ -6,6 +6,7 @@ import {
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 import { BenefitType, SelectedPage } from "@/shared/types";
+import Benefit from "./Benefit";
 
 const benifits: Array<BenefitType> = [
 	{
@@ -53,8 +54,14 @@ const Benefits = ({ setSelectedPage }: Props) => {
 				</div>
 				{/* <==<<=== Benefits ===>>==> */}
 				<div className="md:flex items-center justify-between gap-8 mt-5">
-					{benifits.map((benifit) => (
-						<Benifit />
+					{benifits.map((benifit: BenefitType) => (
+						<Benefit
+							key={benifit.title}
+							icon={benifit.icon}
+							title={benifit.title}
+							description={benifit.description}
+							setSelectedPage={setSelectedPage}
+						/>
 					))}
 				</div>
 			</motion.div>
