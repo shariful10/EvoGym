@@ -31,11 +31,11 @@ const Home = ({ setSelectedPage }: Props) => {
 						<p className="mt-8 text-sm">
 							Unrivaled Gym. Unparalleled Training Fitness Classes. World
 							Class Studios to Get the Body Shapes That You Dream of..
-							Get Your Dream Body Now
+							Get Your Dream Body Now.
 						</p>
 					</div>
 					{/* <==<<=== Actions ===>>==> */}
-					<div>
+					<div className="mt-8">
 						<ActionButton setSelectedPage={setSelectedPage}>
 							Join Now
 						</ActionButton>
