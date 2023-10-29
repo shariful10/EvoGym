@@ -20,7 +20,14 @@ const Home = ({ setSelectedPage }: Props) => {
 				{/* <==<<=== Main Header ===>>==> */}
 				<div className="">
                {/* <==<<=== Headeings ===>>==> */}
-               <div className=""></div>
+               <div className="">
+                  <div className="">
+                     <div className="">
+                        <img src={HomePageText} alt="HomePageText" />
+                     </div>
+                  </div>
+                  <p className="">Unrivaled Gym. Un</p>
+               </div>
             </div>
             {/* <==<<=== Image ===>>==> */}
             <div className=""></div>
