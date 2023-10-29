@@ -26,7 +26,7 @@ const Home = ({ setSelectedPage }: Props) => {
                         <img src={HomePageText} alt="HomePageText" />
                      </div>
                   </div>
-                  <p className="">Unrivaled Gym. Un</p>
+                  <p className="">Unrivaled Gym. Unparalleled Training Fitness Classes. World Class Studios to Get the Body Shapes That You Dream of.. Get Your Dream Body Now</p>
                </div>
             </div>
             {/* <==<<=== Image ===>>==> */}
