@@ -18,7 +18,7 @@ const Home = ({ setSelectedPage }: Props) => {
 	return (
 		<section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
 			{/* <==<<=== Main Header & Image ===>>==> */}
-			<div className="">
+			<div className="md:flex">
 				{/* <==<<=== Main Header ===>>==> */}
 				<div className="">
 					{/* <==<<=== Headeings ===>>==> */}
