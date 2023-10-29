@@ -5,7 +5,7 @@ import {
 } from "@heroicons/react/24/solid";
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
-import { SelectedPage } from "@/shared/types";
+import { BenefitType, SelectedPage } from "@/shared/types";
 
 const benifits: Array<BenefitType> = [
 	{
