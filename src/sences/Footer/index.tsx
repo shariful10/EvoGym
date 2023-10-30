@@ -1,7 +1,14 @@
 import Logo from "@/assets/Logo.png";
+import Link from "@/sences/Navbar/Link";
+import { SelectedPage } from "@/shared/types";
 
-const Footer = () => {
-   const year = new Date().getFullYear();
+interface Type {
+	selectedPage: SelectedPage;
+	setSelectedPage: (value: SelectedPage) => void;
+}
+
+const Footer = ({ selectedPage, setSelectedPage }: Type) => {
+	const year = new Date().getFullYear();
 
 	return (
 		<footer className="bg-primary-100 py-16">
@@ -15,6 +22,30 @@ const Footer = () => {
 						tristique.
 					</p>
 					<p>© {year} Evogym All Rights Reserved.</p>
+				</div>
+				<div className="mt-16 basis-1/4 md:mt-0">
+					<h4 className="font-bold">Quick Links</h4>
+					<div className="mt-5">
+						<Link
+							page="Home"
+							selectedPage={SelectedPage}
+							setSelectedPage={setSelectedPage}
+						/>
+					</div>
+					<div className="my-2">
+						<Link
+							page="Benefits"
+							selectedPage={SelectedPage}
+							setSelectedPage={setSelectedPage}
+						/>
+					</div>
+					<div className="my-2">
+						<Link
+							page="OurClasses"
+							selectedPage={SelectedPage}
+							setSelectedPage={setSelectedPage}
+						/>
+					</div>
 				</div>
 			</div>
 		</footer>
