@@ -1,13 +1,13 @@
 import { SelectedPage, ClassType } from "@/shared/types";
 import image1 from "@/assets/image1.png";
+import Class from "./Class";
+import HText from "@/shared/HText";
+import { motion } from "framer-motion";
 import image2 from "@/assets/image2.png";
 import image3 from "@/assets/image3.png";
 import image4 from "@/assets/image4.png";
 import image5 from "@/assets/image5.png";
 import image6 from "@/assets/image6.png";
-import { motion } from "framer-motion";
-import HText from "@/shared/HText";
-import Class from "./Class";
 
 const classes: Array<ClassType> = [
 	{
@@ -19,7 +19,7 @@ const classes: Array<ClassType> = [
 	{
 		name: "Yoga Classes",
 		image: image2,
-      description:
+		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 	},
 	{
@@ -37,7 +37,7 @@ const classes: Array<ClassType> = [
 	{
 		name: "Fitness Classes",
 		image: image5,
-      description:
+		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 	},
 	{
