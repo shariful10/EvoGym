@@ -1,9 +1,10 @@
 import Home from "@/sences/Home";
 import Navbar from "@/sences/Navbar";
 import Benefits from "@/sences/Benefits";
+import ContactUs from "@/sences/ContactUs";
 import { useEffect, useState } from "react";
+import OurClasses from "@/sences/OurClasses";
 import { SelectedPage } from "@/shared/types";
-import OurClasses from "./sences/OurClasses";
 
 const App = () => {
 	const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
@@ -34,6 +35,7 @@ const App = () => {
 			<Home setSelectedPage={setSelectedPage} />
 			<Benefits setSelectedPage={setSelectedPage} />
 			<OurClasses setSelectedPage={setSelectedPage} />
+			<ContactUs setSelectedPage={setSelectedPage} />
 		</div>
 	);
 };
