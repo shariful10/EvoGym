@@ -10,9 +10,18 @@ type Props = {
 const ContactUs = ({ setSelectedPage }: Props) => {
 	const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
 
+	const onSubmit = async (e: any) => {
+		const isValid = await trigger();
+		if (!isValid) {
+			e.preventDefault();
+		}
+	};
+
 	return (
 		<section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
-			<motion.div onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>
+			<motion.div
+				onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
+			>
 				{/* HEADER */}
 				<motion.div
 					className="md:w-3/5"
