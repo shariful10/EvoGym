@@ -1,6 +1,8 @@
 import Logo from "@/assets/Logo.png";
 
 const Footer = () => {
+   const year = new Date().getFullYear();
+
 	return (
 		<footer className="bg-primary-100 py-16">
 			<div className="justify-content mx-auto w-5/6 gap-16 md:flex">
@@ -12,6 +14,7 @@ const Footer = () => {
 						scelerisque iaculis orci ut habitant laoreet. Iaculis
 						tristique.
 					</p>
+					<p>© {year} Evogym All Rights Reserved.</p>
 				</div>
 			</div>
 		</footer>
