@@ -5,20 +5,18 @@ type Props = {
 };
 
 const Class = ({ name, description, image }: Props) => {
-	const overlayStyles = `p-5 absolute z-30 flex
-   h-[100%] w-fit flex-col items-center justify-center 
-   transition duration-500 whitespace-normal bg-primary-500 
-   text-center text-white opacity-0 transition duration-500 
-   hover:opacity-90 rounded-md cursor-pointer z-0`;
+	// const overlayStyles = `absolute m-auto w-[300px] h-[350px] rounded-xl inset-0 p-10 text-center flex flex-col items-center justify-end bg-orange-700 text-white transition-all duration-700 md:opacity-0 bottom-0 group-hover:bottom-10 md:group-hover:opacity-100 group-hover:translate-y-0 cursor-pointer z-0`;
 
 	return (
-		<li className="relative inline-block">
-			<div className={overlayStyles}>
+		<div className="relative inline-block group">
+			<div className="absolute md:top-10 m-auto w-[90%] h-[90%] rounded-xl inset-0 p-5 sm:p-5 md:p-10 text-center flex flex-col items-center justify-center bg-primary-300 text-gray-500 transition-all duration-700 md:opacity-0 bottom-0 md:group-hover:bottom-10 md:group-hover:opacity-100 group-hover:translate-y-0 cursor-pointer z-0">
 				<p className="text-2xl">{name}</p>
-				<p className="mt-5">{description}</p>
+				<p className="mt-2 sm:mt-0 md:mt-5 text-sm md:text-base">
+					{description}
+				</p>
 			</div>
 			<img alt={`${image}`} src={image} className="rounded-md" />
-		</li>
+		</div>
 	);
 };
 

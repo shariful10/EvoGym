@@ -76,7 +76,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 			</div>
 			{/* <==<<=== Mobile Menu ===>>==> */}
 			{!isAboveMediumScreens && isMenuToggle && (
-				<div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+				<div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 shadow-2xl">
 					{/* <==<<=== Close Icon ===>>==> */}
 					<div className="flex justify-end px-12 pb-12 pt-7">
 						<button onClick={() => setIsMenuToggle(!isMenuToggle)}>
