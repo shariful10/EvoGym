@@ -9,4 +9,5 @@ export interface BenefitType {
 	title: string;
 	icon: JSX.Element;
 	description: string;
+   setSelectedClass?: (value: SelectedPage) => void;
 }
