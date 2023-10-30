@@ -57,7 +57,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 					whileInView="visible"
 					transition={{ delay: 0.3, duration: 0.5 }}
 					variants={{
-						hidden: { opacity: 0, x: -50 },
+						hidden: { opacity: 0, x: 50 },
 						visible: { opacity: 1, x: 0 },
 					}}
 					viewport={{ once: true, amount: 0.5 }}
