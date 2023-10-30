@@ -1,5 +1,6 @@
 import Home from "@/sences/Home";
 import Navbar from "@/sences/Navbar";
+import Footer from "@/sences/Footer";
 import Benefits from "@/sences/Benefits";
 import ContactUs from "@/sences/ContactUs";
 import { useEffect, useState } from "react";
@@ -36,6 +37,7 @@ const App = () => {
 			<Benefits setSelectedPage={setSelectedPage} />
 			<OurClasses setSelectedPage={setSelectedPage} />
 			<ContactUs setSelectedPage={setSelectedPage} />
+         <Footer />
 		</div>
 	);
 };

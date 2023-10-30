@@ -89,7 +89,6 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 										"Max length is 100 char."}
 								</p>
 							)}
-
 							<input
 								className={inputStyles}
 								type="text"
@@ -107,11 +106,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 										"Invalid email address."}
 								</p>
 							)}
-
 							<textarea
 								className={inputStyles}
 								placeholder="MESSAGE"
-								rows={4}
+								rows={5}
 								cols={50}
 								{...register("message", {
 									required: true,
@@ -126,7 +124,6 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 										"Max length is 2000 char."}
 								</p>
 							)}
-
 							<button
 								type="submit"
 								className="mt-5 rounded-lg bg-secondary-500 hover:bg-primary-500 px-20 py-3 transition duration-500 hover:text-white font-medium"
@@ -135,7 +132,6 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 							</button>
 						</form>
 					</motion.div>
-
 					<motion.div
 						initial="hidden"
 						whileInView="visible"
