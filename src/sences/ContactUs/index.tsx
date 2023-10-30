@@ -1,4 +1,5 @@
 import { SelectedPage } from "@/shared/types";
+import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 
 type Props = {
 	setSelectedPage: (value: SelectedPage) => void;
@@ -118,13 +119,13 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 					</div>
 
 					<div className="relative mt-16 basis-2/5 md:mt-0">
-						{/* <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
+						<div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
 							<img
 								className="w-full"
 								alt="contact-us-page-graphic"
 								src={ContactUsPageGraphic}
 							/>
-						</div> */}
+						</div>
 					</div>
 				</div>
 			</div>
