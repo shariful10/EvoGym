@@ -86,6 +86,27 @@ const Benefits = ({ setSelectedPage }: Props) => {
 						/>
 					))}
 				</motion.div>
+				{/* <==<<=== Graphic & Desc ===>>==> */}
+				<div className="">
+					{/* <==<<=== Graphic ===>>==> */}
+					<img src="" alt="" />
+					{/* <==<<=== Description ===>>==> */}
+					<div className="">
+						{/* <==<<=== Title ===>>==> */}
+						<div className="relative">
+							<div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-avstractwaves">
+								<div>
+									<HText>
+										Millions of happy members getting{" "}
+										<span className="text-pink-500">fit</span>.
+									</HText>
+								</div>
+							</div>
+						</div>
+						{/* <==<<=== Description ===>>==> */}
+						{/* <==<<=== Button ===>>==> */}
+					</div>
+				</div>
 			</motion.div>
 		</section>
 	);
