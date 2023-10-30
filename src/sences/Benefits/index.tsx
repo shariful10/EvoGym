@@ -7,6 +7,7 @@ import Benefit from "./Benefit";
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 import { BenefitType, SelectedPage } from "@/shared/types";
+import ActionButton from "@/shared/ActionButton";
 
 const benefits: Array<BenefitType> = [
 	{
@@ -95,12 +96,21 @@ const Benefits = ({ setSelectedPage }: Props) => {
 						{/* <==<<=== Title ===>>==> */}
 						<div className="relative">
 							<div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-avstractwaves">
-								<div>
+								<motion.div
+									initial="hidden"
+									whileInView="visible"
+									viewport={{ once: true, amount: 0.5 }}
+									transition={{ duration: 0.5 }}
+									variants={{
+										hidden: { opacity: 0, x: 50 },
+										visible: { opacity: 1, x: 0 },
+									}}
+								>
 									<HText>
 										Millions of happy members getting{" "}
 										<span className="text-pink-500">fit</span>.
 									</HText>
-								</div>
+								</motion.div>
 							</div>
 						</div>
 						{/* <==<<=== Description ===>>==> */}
@@ -132,6 +142,13 @@ const Benefits = ({ setSelectedPage }: Props) => {
 							</p>
 						</motion.div>
 						{/* <==<<=== Button ===>>==> */}
+						<div className="relative mt-16">
+							<div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+								<ActionButton setSelectedPage={setSelectedPage}>
+									Join Now
+								</ActionButton>
+							</div>
+						</div>
 					</div>
 				</div>
 			</motion.div>
