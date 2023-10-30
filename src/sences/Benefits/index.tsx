@@ -8,7 +8,7 @@ import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 import { BenefitType, SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
-import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png"
+import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 
 const benefits: Array<BenefitType> = [
 	{
@@ -64,7 +64,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 					className="md:w-3/5 md:my-5"
 				>
 					<HText>more than just a gym</HText>
-					<p className="my-5 text-[18px]">
+					<p className="my-5 text-[18px] md:w-4/5">
 						We provide world class fitness equipment, trainers and classes
 						to get you to your ultimate fitness goals with ease. We
 						provide true care into each and every member.
@@ -89,7 +89,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 					))}
 				</motion.div>
 				{/* <==<<=== Graphic & Desc ===>>==> */}
-				<div className="">
+				<div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
 					{/* <==<<=== Graphic ===>>==> */}
 					<img
 						className="mx-auto"
@@ -97,7 +97,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 						src={BenefitsPageGraphic}
 					/>
 					{/* <==<<=== Description ===>>==> */}
-					<div className="">
+					<div className="md:w-1/2">
 						{/* <==<<=== Title ===>>==> */}
 						<div className="relative">
 							<div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-avstractwaves">
@@ -125,7 +125,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 							viewport={{ once: true, amount: 0.5 }}
 							transition={{ delay: 0.2, duration: 0.5 }}
 							variants={{
-								hidden: { opacity: 0, x: 50 },
+								hidden: { opacity: 0, x: -50 },
 								visible: { opacity: 1, x: 0 },
 							}}
 						>
