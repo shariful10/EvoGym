@@ -3,10 +3,10 @@ import {
 	HomeModernIcon,
 	AcademicCapIcon,
 } from "@heroicons/react/24/solid";
+import Benefit from "./Benefit";
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
 import { BenefitType, SelectedPage } from "@/shared/types";
-import Benefit from "./Benefit";
 
 const benefits: Array<BenefitType> = [
 	{
@@ -28,6 +28,13 @@ const benefits: Array<BenefitType> = [
 			"Fusce vestibulum aliquam ut cras. Nisl lectus egestas nisl. Lacus at mi sit pellentesque. Congue parturient",
 	},
 ];
+
+const container = {
+	hidden: {},
+	visible: {
+		transition: { staggerChildren: 0.3 },
+	},
+};
 
 type Props = {
 	setSelectedPage: (value: SelectedPage) => void;
@@ -53,18 +60,24 @@ const Benefits = ({ setSelectedPage }: Props) => {
 					</p>
 				</div>
 				{/* <==<<=== Benefits ===>>==> */}
-				<div className="md:flex items-center justify-between gap-8 mt-5">
+				<motion.div
+					initial="hidden"
+					whileInView="visible"
+					variants={container}
+					viewport={{ once: true, amount: 0.5 }}
+					className="md:flex items-center justify-between gap-8 mt-5"
+				>
 					{benefits.map((benefit: BenefitType) => (
 						<Benefit
 							key={benefit.title}
-							// @ts-ignore
 							icon={benefit.icon}
 							title={benefit.title}
 							description={benefit.description}
+							// @ts-ignore
 							setSelectedPage={setSelectedPage}
 						/>
 					))}
-				</div>
+				</motion.div>
 			</motion.div>
 		</section>
 	);
