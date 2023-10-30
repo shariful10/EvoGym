@@ -129,7 +129,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 								visible: { opacity: 1, x: 0 },
 							}}
 						>
-							<p className="my-5">
+							<p className="my-5 text-[18px]">
 								Nascetur aenean massa auctor tincidunt. Iaculis potenti
 								amet egestas ultrices consectetur adipiscing ultricies
 								enim. Pulvinar fames vitae vitae quis. Quis amet

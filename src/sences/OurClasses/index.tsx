@@ -71,7 +71,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
 				>
 					<div className="md:w-3/5">
 						<HText>OUR CLASSES</HText>
-						<p className="py-5">
+						<p className="py-5 text-[18px]">
 							Fringilla a sed at suspendisse ut enim volutpat. Rhoncus
 							vel est tellus quam porttitor. Mauris velit euismod
 							elementum arcu neque facilisi. Amet semper tortor facilisis
@@ -79,7 +79,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
 						</p>
 					</div>
 				</motion.div>
-				<div className="grid sm:grid-cols-2 md:grid-cols-3 justify-center items-center gap-6 w-5/6 mx-auto z-0">
+				<div className="grid sm:grid-cols-2 md:grid-cols-3 justify-center items-center gap-6 w-5/6 mx-auto z-0 mt-5">
 					{classes.map((item: ClassType, index) => (
 						<Class
 							key={`${item.name}-${index}`}
