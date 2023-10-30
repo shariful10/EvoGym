@@ -48,17 +48,26 @@ const Benefits = ({ setSelectedPage }: Props) => {
 		>
 			<motion.div
 				onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
-				className=""
 			>
 				{/* <==<<=== Header ===>>==> */}
-				<div className="md:w-3/5 md:my-5">
+				<motion.div
+					initial="hidden"
+					whileInView="visible"
+					transition={{ delay: 0.3, duration: 0.5 }}
+					variants={{
+						hidden: { opacity: 0, x: -50 },
+						visible: { opacity: 1, x: 0 },
+					}}
+					viewport={{ once: true, amount: 0.5 }}
+					className="md:w-3/5 md:my-5"
+				>
 					<HText>more than just a gym</HText>
 					<p className="my-5 text-[18px]">
 						We provide world class fitness equipment, trainers and classes
 						to get you to your ultimate fitness goals with ease. We
 						provide true care into each and every member.
 					</p>
-				</div>
+				</motion.div>
 				{/* <==<<=== Benefits ===>>==> */}
 				<motion.div
 					initial="hidden"
