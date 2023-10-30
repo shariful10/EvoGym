@@ -1,3 +1,5 @@
+import HText from "@/shared/HText";
+import { motion } from "framer-motion";
 import { SelectedPage } from "@/shared/types";
 import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 
@@ -10,7 +12,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 	return (
 		<section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
-			<div onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>
+			<motion.div onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>
 				{/* HEADER */}
 				<motion.div
 					className="md:w-3/5"
@@ -37,7 +39,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 				{/* FORM AND IMAGE */}
 				<div className="mt-10 justify-between gap-8 md:flex">
-					<div
+					<motion.div
 						className="mt-10 basis-3/5 md:mt-0"
 						initial="hidden"
 						whileInView="visible"
@@ -111,14 +113,24 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 							<button
 								type="submit"
-								className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+								className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white font-medium"
 							>
 								SUBMIT
 							</button>
 						</form>
-					</div>
+					</motion.div>
 
-					<div className="relative mt-16 basis-2/5 md:mt-0">
+					<motion.div
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: true, amount: 0.5 }}
+						transition={{ delay: 0.2, duration: 0.5 }}
+						variants={{
+							hidden: { opacity: 0, y: 50 },
+							visible: { opacity: 1, y: 0 },
+						}}
+						className="relative mt-16 basis-2/5 md:mt-0"
+					>
 						<div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
 							<img
 								className="w-full"
@@ -126,9 +138,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 								src={ContactUsPageGraphic}
 							/>
 						</div>
-					</div>
+					</motion.div>
 				</div>
-			</div>
+			</motion.div>
 		</section>
 	);
 };
