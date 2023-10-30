@@ -1,5 +1,6 @@
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/shared/types";
 import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 
@@ -9,6 +10,12 @@ type Props = {
 
 const ContactUs = ({ setSelectedPage }: Props) => {
 	const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
+
+	const {
+		register,
+		trigger,
+		formState: { errors },
+	} = useForm();
 
 	const onSubmit = async (e: any) => {
 		const isValid = await trigger();
@@ -122,7 +129,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 							<button
 								type="submit"
-								className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white font-medium"
+								className="mt-5 rounded-lg bg-secondary-500 hover:bg-primary-500 px-20 py-3 transition duration-500 hover:text-white font-medium"
 							>
 								SUBMIT
 							</button>
