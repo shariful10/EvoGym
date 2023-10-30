@@ -58,7 +58,7 @@ const Home = ({ setSelectedPage }: Props) => {
 							visible: { opacity: 1, x: 0 },
 						}}
 						viewport={{ once: true, amount: 0.5 }}
-						className="mt-8 flex items-center gap-8"
+						className="mt-8 flex items-center gap-8 font-medium"
 					>
 						<ActionButton setSelectedPage={setSelectedPage}>
 							Join Now
