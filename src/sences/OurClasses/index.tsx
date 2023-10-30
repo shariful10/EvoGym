@@ -79,7 +79,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
 						</p>
 					</div>
 				</motion.div>
-				<div className="grid md:grid-cols-3 justify-center items-center gap-6 w-5/6 mx-auto">
+				<div className="grid sm:grid-cols-2 md:grid-cols-3 justify-center items-center gap-6 w-5/6 mx-auto z-0">
 					{classes.map((item: ClassType, index) => (
 						<Class
 							key={`${item.name}-${index}`}

@@ -9,7 +9,7 @@ const Class = ({ name, description, image }: Props) => {
    h-[100%] w-fit flex-col items-center justify-center 
    transition duration-500 whitespace-normal bg-primary-500 
    text-center text-white opacity-0 transition duration-500 
-   hover:opacity-90 rounded-md cursor-pointer`;
+   hover:opacity-90 rounded-md cursor-pointer z-0`;
 
 	return (
 		<li className="relative inline-block">
