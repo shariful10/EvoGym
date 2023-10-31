@@ -45,9 +45,21 @@ To get started with Evolve Gym, follow these steps:
    yarn
    ```
 
+   or,
+
+   ```
+   npm install
+   ```
+
 3. Start the application:
    ```
    yarn dev
+   ```
+
+   or,
+
+   ```
+   npm run dev
    ```
 
 ---
