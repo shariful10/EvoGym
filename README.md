@@ -1,4 +1,4 @@
-# Evolve Gym - Fitness Training Center
+# Evolve Gym - A Fitness Training Center
 
 Welcome to Evolve Gym, your ultimate destination for achieving your fitness goals and leading a healthier, more active lifestyle. Our state-of-the-art training center offers a range of facilities and expert guidance to help you reach your peak physical condition.
 
