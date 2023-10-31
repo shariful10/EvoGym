@@ -2,14 +2,16 @@
 
 Welcome to Evolve Gym, your ultimate destination for achieving your fitness goals and leading a healthier, more active lifestyle. Our state-of-the-art training center offers a range of facilities and expert guidance to help you reach your peak physical condition.
 
-## Table of Contents
+## Used Pacages
 
-1. [Features](#features)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [Support](#support)
-6. [License](#license)
+* Vite
+* React
+* TypeScript
+* Hero Icons
+* Tailwind CSS
+* Framer Motion
+* React Hook Form
+* React Ancor Link Smooth Scrool
 
 ---
 
